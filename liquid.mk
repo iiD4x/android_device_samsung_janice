@@ -21,9 +21,6 @@ PRODUCT_RELEASE_NAME := janice
 # device
 $(call inherit-product-if-exists, device/samsung/janice/full_janice.mk)
 
-# gsm
-$(call inherit-product, vendor/liquid/config/common_gsm.mk)
-
 # phone
 $(call inherit-product, vendor/liquid/config/common_phone.mk)
 
