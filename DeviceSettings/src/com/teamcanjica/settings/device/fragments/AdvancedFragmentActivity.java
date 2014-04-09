@@ -43,8 +43,6 @@ public class AdvancedFragmentActivity extends PreferenceFragment {
 
 	private static final String FILE_SPI_CRC = "/sys/module/mmc_core/parameters/use_spi_crc";
 
-	private static final String FILE_BLN = "/sys/class/misc/backlightnotification/enabled";	  
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -99,12 +97,6 @@ public class AdvancedFragmentActivity extends PreferenceFragment {
 					getString(R.string.accelerometer_dialog_message));
 		}
 
-		if (key.equals(DeviceSettings.KEY_DISABLE_BLN)) {
-			boxValue = (((CheckBoxPreference) preference).isChecked() ? "0"
-					: "1");
-			Utils.writeValue(FILE_BLN, boxValue);
-		}
-
 		return true;
 	}
 
@@ -125,10 +117,6 @@ public class AdvancedFragmentActivity extends PreferenceFragment {
 				DeviceSettings.KEY_USE_ACCELEROMETER_CALIBRATION, true);
 		if (!accelerometerCalib)
 			Utils.writeValue(FILE_ACCELEROMETER_CALIB, "0");
-
-		String blnvalue = sharedPrefs.getBoolean(
-				DeviceSettings.KEY_DISABLE_BLN, true) ? "0" : "1";
-		Utils.writeValue(FILE_BLN, blnvalue);
 
 	}
 
