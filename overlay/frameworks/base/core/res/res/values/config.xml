@@ -83,17 +83,5 @@
          * The device must be provisioned with HDCP keys (for protected content).
     -->
     <bool name="config_enableWifiDisplay">true</bool>
-<<<<<<< HEAD
-    
-    <!-- Boolean to enable stk functionality on Samsung phones -->
-    <bool name="config_samsung_stk">true</bool>
-	
-    <!-- Device supports LED flashlight -->
-    <bool name="config_enableTorch">true</bool>
-    
-    <!-- Disabled to activate electron beam animation (CRT-OFF) -->
-    <bool name="config_animateScreenLights">false</bool>
-=======
->>>>>>> bb2f6d5f4059de30d836e19efe71d3bad21b20e2
 
 </resources>

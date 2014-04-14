@@ -14,16 +14,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true
 
-<<<<<<< HEAD
-# Packages
-PRODUCT_PACKAGES += \
-    GalaxySAdvanceSettings \
-    Stk \
-    org.cyanogenmod.hardware \
-    org.cyanogenmod.hardware.xml
-
-=======
->>>>>>> bb2f6d5f4059de30d836e19efe71d3bad21b20e2
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \

@@ -15,8 +15,8 @@
 # limitations under the License.
 #
 
-# name
-PRODUCT_RELEASE_NAME := janice
+# Release name
+PRODUCT_RELEASE_NAME := GT-I9070
 
 # device
 $(call inherit-product-if-exists, device/samsung/janice/full_janice.mk)
@@ -29,9 +29,14 @@ TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
 # If the boot animation is not automatically selected, we chose it here :)
-
 PRODUCT_COPY_FILES +=  \
     vendor/liquid/prebuilt/common/bootanimation/480.zip:system/media/bootanimation.zip
+
+# CM Packages
+PRODUCT_PACKAGES += \
+    Stk \
+    org.cyanogenmod.hardware \
+    org.cyanogenmod.hardware.xml
 
 # products
 PRODUCT_DEVICE := janice
