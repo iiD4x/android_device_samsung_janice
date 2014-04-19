@@ -38,6 +38,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
     frameworks/native/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml
 
+#common build.props
+PRODUCT_PROPERTY_OVERRIDES += \
+    otaupdater.otaid=liquidjanice
+	
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/adm.sqlite-u8500:system/etc/adm.sqlite-u8500 \
