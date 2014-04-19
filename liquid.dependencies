@@ -8,7 +8,7 @@
    {
     "remote": "gh",
     "revision": "3.0.31",
-    "repository": "TeamNova/Samsung_STE_Kernel/",
+    "repository": "TeamCanjica/Samsung_STE_Kernel",
     "target_path": "kernel/samsung/u8500"
    },
    {
